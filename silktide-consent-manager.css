@@ -267,11 +267,12 @@
   Modal - Header
 -------------------------------- */
 #silktide-modal header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  gap: 16px;
+  line-height: 1.4 !important;
+  letter-spacing: normal !important;
+  word-spacing: normal !important;
+  margin-bottom: 10px !important;
+  display: block !important;
+  white-space: normal !important;
 }
 
 /* Stronger header fix */
