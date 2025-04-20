@@ -274,17 +274,16 @@
   gap: 16px;
 }
 
-/* Fix modal title spacing */
+/* Stronger header fix */
 #silktide-modal h1 {
-  font-family: var(--fontFamily);
-  color: var(--textColor);
-  font-size: 24px;
-  font-weight: 500;
-  margin: 0px;
-  line-height: 1.3;        /* Added */
-  letter-spacing: normal;  /* Added */
-  white-space: normal;     /* Just in case */
+  line-height: 1.4 !important;
+  letter-spacing: normal !important;
+  word-spacing: normal !important;
+  margin-bottom: 10px !important;
+  display: block !important;
+  white-space: normal !important;
 }
+
 
 #silktide-modal .modal-close {
   display: inline-flex;
@@ -577,10 +576,14 @@
   padding: 0;
 }
 
-/* Hide the "Get this banner for free" link */
+/* Aggressively hide the credit link */
 #silktide-modal footer a,
-#silktide-modal footer a:visited {
+#silktide-modal footer a[href*="silktide.com"],
+#silktide-modal a.silktide-logo {
   display: none !important;
   visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
-
