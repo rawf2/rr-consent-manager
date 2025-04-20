@@ -209,8 +209,8 @@
 }
 
 #silktide-banner a.silktide-logo {
-  display: none;
-  fill: var(--primaryColor); /* passed down to svg > path */
+  display: none !important;
+  /* fill: var(--primaryColor);  passed down to svg > path */
   margin-left: auto;
   width: 0px;
   height: 0px;
@@ -472,7 +472,7 @@
   display: none;
   position: fixed;
   bottom: 10px;
-  left: 10px;
+  right: 10px;
   justify-content: center;
   align-items: center;
   width: 60px;
