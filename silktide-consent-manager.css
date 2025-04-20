@@ -209,11 +209,11 @@
 }
 
 #silktide-banner a.silktide-logo {
-  display: block;
+  display: none;
   fill: var(--primaryColor); /* passed down to svg > path */
   margin-left: auto;
-  width: 24px;
-  height: 24px;
+  width: 0px;
+  height: 0px;
 }
 
 
@@ -274,12 +274,16 @@
   gap: 16px;
 }
 
+/* Fix modal title spacing */
 #silktide-modal h1 {
   font-family: var(--fontFamily);
   color: var(--textColor);
   font-size: 24px;
   font-weight: 500;
   margin: 0px;
+  line-height: 1.3;        /* Added */
+  letter-spacing: normal;  /* Added */
+  white-space: normal;     /* Just in case */
 }
 
 #silktide-modal .modal-close {
@@ -572,3 +576,11 @@
   margin: 0;
   padding: 0;
 }
+
+/* Hide the "Get this banner for free" link */
+#silktide-modal footer a,
+#silktide-modal footer a:visited {
+  display: none !important;
+  visibility: hidden !important;
+}
+
