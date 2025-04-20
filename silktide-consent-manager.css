@@ -588,3 +588,8 @@
   margin: 0 !important;
   padding: 0 !important;
 }
+
+#silktide-cookie-icon {
+  left: auto !important;
+  right: 10px !important;
+}
