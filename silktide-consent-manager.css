@@ -209,11 +209,11 @@
 }
 
 #silktide-banner a.silktide-logo {
-  display: none !important;
-  /* fill: var(--primaryColor);  passed down to svg > path */
+  display: block;
+  fill: var(--primaryColor); /* passed down to svg > path */
   margin-left: auto;
-  width: 0px;
-  height: 0px;
+  width: 24px;
+  height: 24px;
 }
 
 
@@ -267,24 +267,20 @@
   Modal - Header
 -------------------------------- */
 #silktide-modal header {
-  line-height: 1.4 !important;
-  letter-spacing: normal !important;
-  word-spacing: normal !important;
-  margin-bottom: 10px !important;
-  display: block !important;
-  white-space: normal !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 16px;
 }
 
-/* Stronger header fix */
 #silktide-modal h1 {
-  line-height: 1.4 !important;
-  letter-spacing: normal !important;
-  word-spacing: normal !important;
-  margin-bottom: 10px !important;
-  display: block !important;
-  white-space: normal !important;
+  font-family: var(--fontFamily);
+  color: var(--textColor);
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0px;
 }
-
 
 #silktide-modal .modal-close {
   display: inline-flex;
@@ -473,7 +469,7 @@
   display: none;
   position: fixed;
   bottom: 10px;
-  right: 10px;
+  left: 10px;
   justify-content: center;
   align-items: center;
   width: 60px;
@@ -566,30 +562,4 @@
     opacity: 1;
     transform: translate(0px, 0px);
   }
-}
-
-#silktide-banner a.silktide-logo {
-  display: none !important;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/* Aggressively hide the credit link */
-#silktide-modal footer a,
-#silktide-modal footer a[href*="silktide.com"],
-#silktide-modal a.silktide-logo {
-  display: none !important;
-  visibility: hidden !important;
-  height: 0 !important;
-  width: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-#silktide-cookie-icon {
-  left: auto !important;
-  right: 10px !important;
 }
