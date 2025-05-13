@@ -16,15 +16,15 @@ class SilktideCookieBanner {
       this.createBackdrop();
     }
 
-    this.createCookieIcon();
+    // this.createCookieIcon();
     this.createModal();
 
     if (this.shouldShowBanner()) {
       this.createBanner();
       this.showBackdrop();
-    } else {
-      this.showCookieIcon();
-    }
+    //} else {
+      //this.showCookieIcon();
+    //}
 
     this.setupEventListeners();
 
