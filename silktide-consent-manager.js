@@ -16,15 +16,15 @@ class SilktideCookieBanner {
       this.createBackdrop();
     }
 
-    // this.createCookieIcon();
+    this.createCookieIcon();
     this.createModal();
 
     if (this.shouldShowBanner()) {
       this.createBanner();
       this.showBackdrop();
-    //} else {
-      //this.showCookieIcon();
-    //}
+    } else {
+      this.showCookieIcon();
+    }
 
     this.setupEventListeners();
 
@@ -745,9 +745,9 @@ class SilktideCookieBanner {
     }
 
     // Check Cookie Icon exists before trying to add event listeners
-    //if (this.cookieIcon) {
+    if (this.cookieIcon) {
 
-      /*this.cookieIcon.addEventListener('click', () => {
+      this.cookieIcon.addEventListener('click', () => {
         // If modal is not found, create it
         if (!this.modal) {
           this.createModal();
@@ -766,7 +766,7 @@ class SilktideCookieBanner {
       });
     }
   }
-*/
+
   getBannerSuffix() {
     if (this.config.bannerSuffix) {
       return '_' + this.config.bannerSuffix;
